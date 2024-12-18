@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>.sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: #12934c7b;
+        padding: 20px;
+    }
+    
+    .sidebar h2 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+    
+    .sidebar ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .sidebar ul li a:hover {
+        background-color: #141414;
+    }
+    
+    </style>
+    <body>
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="diet_modify.php" id="default" target="mainpage">Modify Dietician Information</a></li>
+                <li><a href="food_modify.html" target="mainpage">Modify Food Information</a></li>
+            </ul>
+        </div>
+        <script>
+            function def_link() {
+        // Get the link element by its ID
+        const def = document.getElementById('default');
+        def.href = 'diet_modify.html';
+    }
+    window.onload = def_link;
+        </script>
+    

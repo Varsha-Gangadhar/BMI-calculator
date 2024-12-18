@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+.login-container {
+    width: 25%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    text-align: left;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+button {
+    width: 91%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <center>
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <div class="input-group">
+                <label for="userid">User ID</label>
+                <input type="text" id="userid" name="userid" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div><br>
+            <button type="submit">Login</button>
+        </form>
+        </center>
+    </div>
+</body>
+</html>
