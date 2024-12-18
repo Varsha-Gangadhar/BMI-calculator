@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+    overflow: hidden;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+thead th{
+    position: sticky;
+    top:0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th,td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-wrap: break-all;
+    text-align: center;
+}
+
+.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.table_header p{
+    color: #000000;
+}
+
+.table_section{
+    height: 650px;
+    overflow: auto;
+}
+
+/*button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}*/
+
+.add_new{
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0298cf;
+}
+
+input{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #0298cf;
+    border-radius: 6px;
+    color: #0298cf;
+}
+
+::placeholder{
+    color: #060707;
+
+}
+
+.btn{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #1E90FF ;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property:  box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
